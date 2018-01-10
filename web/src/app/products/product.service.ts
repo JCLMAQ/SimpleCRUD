@@ -16,7 +16,7 @@ import { ConfirmComponent } from '../shared/confirm/confirm.component';
 export class ProductService {
 	
 	private products: Product[] = [];
-	private pItems;
+//	private pItems;
 	
 	constructor(
 		private wakandaService: WakandaService,
@@ -45,18 +45,24 @@ getProducts() {
 		    	});	
 		    }); 
 		    
-		   this.pItems = this.products;
+//		   this.pItems = this.products;
 		   
      return this.products;   
     }
 
 getProductByID(ID) {
-   // return this.todos.find(todo => todo.ID === ID );
-   console.log('Product '+ ID + ' selected');
+ //  console.log('Product '+ ID + ' selected');
    return this.products.find(product => product.ID === Number(ID));
   }
+
+
+addProduct(product: Product) {
+	    // this.pItems.push(product);
+	    // console.log(this.pItems);
+	    this.newProduct(product.name, product.description,product.price);
+    }
     
-newProduct(newProductName,newProductDescription,newPrice) {
+	newProduct(newProductName,newProductDescription,newPrice) {
         this.wakandaService.getCatalog().then(ds => {
             let product = ds['Product'].create({
                 name: newProductName,
@@ -66,8 +72,8 @@ newProduct(newProductName,newProductDescription,newPrice) {
 
             product.save()
             .then(() => {
-                alert('saved')
-                console.log('Product '+ product['ID'] + ' created');
+//                alert('saved')
+//                console.log('Product '+ product['ID'] + ' created');
                 this.products.push({
                     ID: product['ID'],
                     name: newProductName,
@@ -83,7 +89,7 @@ newProduct(newProductName,newProductDescription,newPrice) {
     }
     
     updateProduct(editedProduct){
-    	console.log('Product '+ editedProduct.ID + ' selected'); 
+ //   	console.log('Product '+ editedProduct.ID + ' selected'); 
     	var that=this;
     //	debugger;
     	
@@ -94,46 +100,31 @@ newProduct(newProductName,newProductDescription,newPrice) {
 				emp.price = editedProduct.price;
 				
 				emp.save().then(function(){
-					alert('Product ' + editedProduct.ID + ' updated');
-					console.log('Product ID :  '+ editedProduct.ID + ' updated');
+//					console.log('Product ID :  '+ editedProduct.ID + ' updated');
 				})
 			});
 	 	});
-	 	this.products
- 
     	return this.products;
     }
     
     
     deleteProduct(product){   
-    	console.log('Product '+ product.ID + ' selected');
+ //  	console.log('Product '+ product.ID + ' selected');
     	//debugger;
     	var that=this;
 	 	this.wakandaService.getCatalog().then(ds=> {	
 			ds['Product'].find(product.ID).then(emp=> {
 				emp.delete().then(function () {
-					alert('Product ID Deleted: ' + product.ID )
-			    	console.log('Product '+ product.ID + ' deleted');
+//					alert('Product ID Deleted: ' + product.ID )
+//			    	console.log('Product '+ product.ID + ' deleted');
 				});
 			});
 	 	});
 	 	var indexToFind = this.getProductByID(product.ID);
 	 	this.products.splice(product.ID, 1);
-	 	//this.todos.splice(indexToFind, 1);	 	
-	 	//this.todos.find(todo => todo.ID === Number(ID));
-	 	
 	 	
 	 	return this.products;
     }
-    
-    addProduct(product: Product) {
-	    // this.pItems.push(product);
-	    // console.log(this.pItems);
-	    this.newProduct(product.name, product.description,product.price);
-	    
-    }
-    
-    
 }
 
 

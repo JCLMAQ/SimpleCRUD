@@ -28,7 +28,7 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
 //	this.products = this.productService.getProducts();
-this.refreshTheList();
+	this.refreshTheList();
   //	debugger;
   }
   
@@ -39,6 +39,7 @@ this.refreshTheList();
     }
     this.editProductForm = true;
     this.editedProduct = clone(product);
+    this.refreshTheList();
   }
 
   showAddProductForm() {
@@ -56,6 +57,7 @@ this.refreshTheList();
       this.productService.addProduct(product);
     }
     this.productForm = false;
+     this.refreshTheList();
   }
 
   removeProduct(product: Product) {
