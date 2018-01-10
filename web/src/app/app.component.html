@@ -1,0 +1,33 @@
+<!--By the way-->
+<mat-sidenav-container fullscreen >
+	<mat-sidenav #sidenav mode="side">
+		<mat-nav-list>
+			<button mat-button routerLink="home"> <mat-icon>home</mat-icon>  Home</button>
+			<button mat-button [routerLink]="['/speakers', {outlets: {'list': ['speakersList'], 'bio': ['none']}}]"> <mat-icon>assignment_ind</mat-icon>  Speakers</button>
+			<button mat-button [routerLink]="['/items', {outlets: {'listItems': ['itemsList'], 'itemDetail': ['none']}}]"> <mat-icon>format_list_bulleted</mat-icon>  Items</button>
+		
+		</mat-nav-list>
+	</mat-sidenav>		
+		
+	<mat-toolbar color="primary" class="mat-elevation-z2">
+		<button mat-icon-button (click)="sidenav.toggle()">
+			<mat-icon>mood</mat-icon>
+		</button>
+		
+	  <span>Angular 5 + Materials 5 (Named Router Outlets and Reducer with Wakanda)</span>
+	
+	  <span class="app-toolbar-filler"></span>
+	  <button mat-button routerLink="home" >Home</button>
+	  <button mat-button
+	    [routerLink]="['/speakers', {outlets: {'list': ['speakersList'], 'bio': ['none']}}]">
+	    Speakers
+	  </button>
+	 <button mat-button routerLink="products" >Products</button>
+	 <button mat-button routerLink="alligatorReducer" >Alligator</button>
+	</mat-toolbar>
+	
+		<div class="app-content">
+			<router-outlet></router-outlet>
+		</div>
+
+</mat-sidenav-container>

@@ -1,0 +1,26 @@
+2018-01-10 15:09:10 [wakanda.supervisor] INFO - solution closed
+2018-01-10 15:09:10 [wakanda] INFO - Opens the solution "D:\Wakanda\Wakanda 2.3\SimpleCRUD-Main\app.waSolution" for running
+2018-01-10 15:09:10 [wakanda.SimpleCRUD-Main] INFO - Users and groups directory opened
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - Datastore opened
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - "backend" project opened
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - "ServerAdmin" project opened
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main] INFO - "SimpleCRUD-Main" solution opened
+2018-01-10 15:09:11 [wakanda] INFO - Starts "SimpleCRUD-Main" solution
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - HTTP Server started
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - "ServerAdmin" project started
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - HTTP Server started
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - "backend" project started
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - Executes the bootstrap file(s)
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - Bootstrap file(s) executed
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - Executes the bootstrap file(s)
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - Warming the cache..........
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - Warming the cache..........done
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - close the initApp shared worker
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main.backend] INFO - Bootstrap file(s) executed
+2018-01-10 15:09:11 [wakanda.SimpleCRUD-Main] INFO - "SimpleCRUD-Main" solution started
+2018-01-10 15:09:11 [wakanda] INFO - "SimpleCRUD-Main" solution has been successfully opened for running (duration: 762 ms)
+2018-01-10 15:09:11 [wakanda.supervisor] INFO - solution opened
+2018-01-10 15:09:11 [IndexManager] INFO - Index  on User.ID built in 0 ms

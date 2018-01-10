@@ -1,0 +1,105 @@
+2017-12-03 11:56:30 [wakanda.BaseA5M5] INFO - Users and groups directory opened
+2017-12-03 11:56:30 [IndexManager] INFO - Index  on Company.ID built in 0 ms
+2017-12-03 11:56:30 [IndexManager] INFO - Index  on Company.country built in 0 ms
+2017-12-03 11:56:30 [IndexManager] INFO - Index  on Company.manager built in 0 ms
+2017-12-03 11:56:30 [IndexManager] INFO - Index  on Country.ID built in 0 ms
+2017-12-03 11:56:30 [IndexManager] INFO - Index  on Employee.ID built in 0 ms
+2017-12-03 11:56:30 [IndexManager] INFO - Index  on Employee.company built in 0 ms
+2017-12-03 11:56:30 [IndexManager] INFO - Index  on Employee.manager built in 0 ms
+2017-12-03 11:56:30 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2017-12-03 11:56:30 [wakanda.BaseA5M5.backend] INFO - Datastore opened
+2017-12-03 11:56:30 [wakanda.BaseA5M5.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-03 11:56:30 [wakanda.BaseA5M5.backend] INFO - "backend" project opened
+2017-12-03 11:56:31 [wakanda.BaseA5M5.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-03 11:56:31 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-03 11:56:31 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution opened
+2017-12-03 11:56:31 [wakanda] INFO - Starts "BaseA5M5" solution
+2017-12-03 11:56:34 [wakanda.BaseA5M5.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-03 11:56:36 [wakanda.BaseA5M5.ServerAdmin] INFO - HTTP Server started
+2017-12-03 11:56:36 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-03 11:56:37 [wakanda.BaseA5M5.backend] INFO - HTTP Server started
+2017-12-03 11:56:37 [wakanda.BaseA5M5.backend] INFO - "backend" project started
+2017-12-03 11:56:37 [wakanda.BaseA5M5.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-03 11:56:37 [wakanda.BaseA5M5.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-03 11:56:37 [wakanda.BaseA5M5.backend] INFO - Executes the bootstrap file(s)
+2017-12-03 11:56:38 [wakanda.BaseA5M5.backend] INFO -  ::::: Creating  2000  Employees  Companies...
+2017-12-03 11:56:38 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2017-12-03 11:56:38 [wakanda.BaseA5M5.backend] INFO - Bootstrap file(s) executed
+2017-12-03 11:56:38 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution started
+2017-12-03 11:56:38 [wakanda] INFO - "BaseA5M5" solution has been successfully opened for running (duration: 8026 ms)
+2017-12-03 11:56:38 [wakanda.supervisor] INFO - solution opened
+2017-12-03 11:56:40 [IndexManager] INFO - Index  on Employee.ID built in 0 ms
+2017-12-03 11:56:40 [IndexManager] INFO - Index  on Employee.company built in 0 ms
+2017-12-03 11:56:40 [IndexManager] INFO - Index  on Employee.manager built in 0 ms
+2017-12-03 11:56:40 [IndexManager] INFO - Index  on Company.ID built in 0 ms
+2017-12-03 11:56:40 [IndexManager] INFO - Index  on Company.country built in 0 ms
+2017-12-03 11:56:40 [IndexManager] INFO - Index  on Company.manager built in 0 ms
+2017-12-03 11:56:40 [IndexManager] INFO - Index  on Country.ID built in 0 ms
+2017-12-03 11:57:21 [wakanda.BaseA5M5.backend] INFO -  End creating Employees. Employees:  2008 , Companies:  105 , Country:  11  ::::: 
+2017-12-03 11:57:21 [wakanda.BaseA5M5.backend] INFO - Warming the cache..........
+2017-12-03 11:57:21 [wakanda.BaseA5M5.backend] INFO - Warming the cache..........done
+2017-12-03 11:57:21 [wakanda.BaseA5M5.backend] INFO - close the initApp shared worker
+2017-12-03 12:05:49 [wakanda] INFO - Stops "BaseA5M5" solution
+2017-12-03 12:05:51 [wakanda.BaseA5M5.backend] INFO - "backend" project stopped
+2017-12-03 12:05:54 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project stopped
+2017-12-03 12:05:54 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution stopped
+2017-12-03 12:05:54 [wakanda] INFO - Closes "BaseA5M5" solution
+2017-12-03 12:05:55 [wakanda.BaseA5M5.backend] INFO - "backend" project closed
+2017-12-03 12:05:55 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project closed
+2017-12-03 12:05:55 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution closed
+2017-12-03 12:20:06 [wakanda.BaseA5M5] INFO - Users and groups directory opened
+2017-12-03 12:20:06 [wakanda.BaseA5M5.backend] INFO - Datastore opened
+2017-12-03 12:20:06 [wakanda.BaseA5M5.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-03 12:20:06 [wakanda.BaseA5M5.backend] INFO - "backend" project opened
+2017-12-03 12:20:06 [wakanda.BaseA5M5.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-03 12:20:06 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-03 12:20:06 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution opened
+2017-12-03 12:20:06 [wakanda] INFO - Starts "BaseA5M5" solution
+2017-12-03 12:20:09 [wakanda.BaseA5M5.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-03 12:20:11 [wakanda.BaseA5M5.ServerAdmin] INFO - HTTP Server started
+2017-12-03 12:20:11 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-03 12:20:12 [wakanda.BaseA5M5.backend] INFO - HTTP Server started
+2017-12-03 12:20:12 [wakanda.BaseA5M5.backend] INFO - "backend" project started
+2017-12-03 12:20:12 [wakanda.BaseA5M5.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-03 12:20:13 [wakanda.BaseA5M5.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-03 12:20:13 [wakanda.BaseA5M5.backend] INFO - Executes the bootstrap file(s)
+2017-12-03 12:20:13 [wakanda.BaseA5M5.backend] INFO - Warming the cache..........
+2017-12-03 12:20:13 [wakanda.BaseA5M5.backend] INFO - Warming the cache..........done
+2017-12-03 12:20:13 [wakanda.BaseA5M5.backend] INFO - close the initApp shared worker
+2017-12-03 12:20:13 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2017-12-03 12:20:13 [wakanda.BaseA5M5.backend] INFO - Bootstrap file(s) executed
+2017-12-03 12:20:13 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution started
+2017-12-03 12:20:13 [wakanda] INFO - "BaseA5M5" solution has been successfully opened for running (duration: 7167 ms)
+2017-12-03 12:20:13 [wakanda.supervisor] INFO - solution opened
+2017-12-03 12:34:42 [wakanda] INFO - Stops "BaseA5M5" solution
+2017-12-03 12:34:46 [wakanda.BaseA5M5.backend] INFO - "backend" project stopped
+2017-12-03 12:34:51 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project stopped
+2017-12-03 12:34:51 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution stopped
+2017-12-03 12:34:51 [wakanda] INFO - Closes "BaseA5M5" solution
+2017-12-03 12:34:52 [wakanda.BaseA5M5.backend] INFO - "backend" project closed
+2017-12-03 12:34:52 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project closed
+2017-12-03 12:34:52 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution closed
+2017-12-03 13:50:25 [wakanda.BaseA5M5] INFO - Users and groups directory opened
+2017-12-03 13:50:25 [wakanda.BaseA5M5.backend] INFO - Datastore opened
+2017-12-03 13:50:25 [wakanda.BaseA5M5.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-03 13:50:25 [wakanda.BaseA5M5.backend] INFO - "backend" project opened
+2017-12-03 13:50:26 [wakanda.BaseA5M5.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-03 13:50:26 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-03 13:50:26 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution opened
+2017-12-03 13:50:26 [wakanda] INFO - Starts "BaseA5M5" solution
+2017-12-03 13:50:30 [wakanda.BaseA5M5.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-03 13:50:31 [wakanda.BaseA5M5.ServerAdmin] INFO - HTTP Server started
+2017-12-03 13:50:31 [wakanda.BaseA5M5.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-03 13:50:33 [wakanda.BaseA5M5.backend] INFO - HTTP Server started
+2017-12-03 13:50:33 [wakanda.BaseA5M5.backend] INFO - "backend" project started
+2017-12-03 13:50:33 [wakanda.BaseA5M5.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-03 13:50:33 [wakanda.BaseA5M5.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-03 13:50:33 [wakanda.BaseA5M5.backend] INFO - Executes the bootstrap file(s)
+2017-12-03 13:50:34 [wakanda.BaseA5M5.backend] INFO - Warming the cache..........
+2017-12-03 13:50:34 [wakanda.BaseA5M5.backend] INFO - Warming the cache..........done
+2017-12-03 13:50:34 [wakanda.BaseA5M5.backend] INFO - close the initApp shared worker
+2017-12-03 13:50:34 [IndexManager] INFO - Index  on User.ID built in 1 ms
+2017-12-03 13:50:34 [wakanda.BaseA5M5.backend] INFO - Bootstrap file(s) executed
+2017-12-03 13:50:34 [wakanda.BaseA5M5] INFO - "BaseA5M5" solution started
+2017-12-03 13:50:34 [wakanda] INFO - "BaseA5M5" solution has been successfully opened for running (duration: 8803 ms)
+2017-12-03 13:50:34 [wakanda.supervisor] INFO - solution opened

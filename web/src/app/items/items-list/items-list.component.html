@@ -1,0 +1,1 @@
+	<mat-card-title>Items</mat-card-title>	<mat-nav-list>	  <mat-list-item *ngFor="let item of items">	  	<a mat-line> {{item.name}} </a>	  	<button mat-icon-button 		  	(click)="showItem(item.id)">		  	<mat-icon>info</mat-icon>	    </button>  		  </mat-list-item>    	</mat-nav-list>

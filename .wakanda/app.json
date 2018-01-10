@@ -1,0 +1,17 @@
+{
+  "name": "SimpleCRUD-Main",
+  "components": [
+    {
+      "type": "backend",
+      "template": "EmployeeCompanyLogin",
+      "name": "backend",
+      "path": "./backend"
+    },
+        {
+      "type": "web",
+      "template": "angular-cli",
+      "name": "web",
+      "path": "./web"
+    }
+    ]
+}

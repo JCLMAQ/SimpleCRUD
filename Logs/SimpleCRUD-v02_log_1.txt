@@ -1,0 +1,128 @@
+2017-12-11 16:18:29 [wakanda.supervisor] INFO - solution closed
+2017-12-11 16:18:29 [wakanda] INFO - Opens the solution "D:\Wakanda 2.3\SimpleCRUD-v02\app.waSolution" for running
+2017-12-11 16:18:29 [wakanda.SimpleCRUD-v02] INFO - Users and groups directory opened
+2017-12-11 16:18:29 [wakanda.SimpleCRUD-v02.backend] INFO - Datastore opened
+2017-12-11 16:18:29 [wakanda.SimpleCRUD-v02.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-11 16:18:29 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project opened
+2017-12-11 16:18:29 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-11 16:18:29 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-11 16:18:29 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution opened
+2017-12-11 16:18:29 [wakanda] INFO - Starts "SimpleCRUD-v02" solution
+2017-12-11 16:18:29 [wakanda.SimpleCRUD-v02.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - HTTP Server started
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.backend] INFO - HTTP Server started
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project started
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.backend] INFO - Executes the bootstrap file(s)
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........done
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.backend] INFO - close the initApp shared worker
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02.backend] INFO - Bootstrap file(s) executed
+2017-12-11 16:18:30 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution started
+2017-12-11 16:18:30 [wakanda] INFO - "SimpleCRUD-v02" solution has been successfully opened for running (duration: 876 ms)
+2017-12-11 16:18:30 [wakanda.supervisor] INFO - solution opened
+2017-12-11 16:18:30 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2017-12-11 16:21:44 [wakanda.supervisor] INFO - solution closed
+2017-12-11 16:21:44 [wakanda] INFO - Opens the solution "D:\Wakanda 2.3\SimpleCRUD-v02\app.waSolution" for running
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02] INFO - Users and groups directory opened
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02.backend] INFO - Datastore opened
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project opened
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution opened
+2017-12-11 16:21:44 [wakanda] INFO - Starts "SimpleCRUD-v02" solution
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - HTTP Server started
+2017-12-11 16:21:44 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.backend] INFO - HTTP Server started
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project started
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.backend] INFO - Executes the bootstrap file(s)
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........done
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.backend] INFO - close the initApp shared worker
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02.backend] INFO - Bootstrap file(s) executed
+2017-12-11 16:21:45 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution started
+2017-12-11 16:21:45 [wakanda] INFO - "SimpleCRUD-v02" solution has been successfully opened for running (duration: 1018 ms)
+2017-12-11 16:21:45 [wakanda.supervisor] INFO - solution opened
+2017-12-11 16:21:45 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2017-12-11 16:48:37 [wakanda.supervisor] INFO - solution closed
+2017-12-11 16:48:37 [wakanda] INFO - Opens the solution "D:\Wakanda 2.3\SimpleCRUD-v02\app.waSolution" for running
+2017-12-11 16:48:37 [wakanda.SimpleCRUD-v02] INFO - Users and groups directory opened
+2017-12-11 16:48:37 [wakanda.SimpleCRUD-v02.backend] INFO - Datastore opened
+2017-12-11 16:48:37 [wakanda.SimpleCRUD-v02.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-11 16:48:37 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project opened
+2017-12-11 16:48:37 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-11 16:48:37 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-11 16:48:37 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution opened
+2017-12-11 16:48:37 [wakanda] INFO - Starts "SimpleCRUD-v02" solution
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - HTTP Server started
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.backend] INFO - HTTP Server started
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project started
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.backend] INFO - Executes the bootstrap file(s)
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........done
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.backend] INFO - close the initApp shared worker
+2017-12-11 16:48:38 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02.backend] INFO - Bootstrap file(s) executed
+2017-12-11 16:48:38 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution started
+2017-12-11 16:48:38 [wakanda] INFO - "SimpleCRUD-v02" solution has been successfully opened for running (duration: 888 ms)
+2017-12-11 16:48:38 [wakanda.supervisor] INFO - solution opened
+2017-12-11 17:19:19 [wakanda.supervisor] INFO - solution closed
+2017-12-11 17:19:19 [wakanda] INFO - Opens the solution "D:\Wakanda 2.3\SimpleCRUD-v02\app.waSolution" for running
+2017-12-11 17:19:19 [wakanda.SimpleCRUD-v02] INFO - Users and groups directory opened
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - Datastore opened
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project opened
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution opened
+2017-12-11 17:19:20 [wakanda] INFO - Starts "SimpleCRUD-v02" solution
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - HTTP Server started
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - HTTP Server started
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project started
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - Executes the bootstrap file(s)
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........done
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - close the initApp shared worker
+2017-12-11 17:19:20 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02.backend] INFO - Bootstrap file(s) executed
+2017-12-11 17:19:20 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution started
+2017-12-11 17:19:20 [wakanda] INFO - "SimpleCRUD-v02" solution has been successfully opened for running (duration: 868 ms)
+2017-12-11 17:19:20 [wakanda.supervisor] INFO - solution opened
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02] INFO - Users and groups directory opened
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02.backend] INFO - Datastore opened
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project opened
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project opened
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution opened
+2018-01-10 14:41:30 [wakanda] INFO - Starts "SimpleCRUD-v02" solution
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - HTTP Server started
+2018-01-10 14:41:30 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - "ServerAdmin" project started
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.backend] INFO - HTTP Server started
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.backend] INFO - "backend" project started
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Executes the bootstrap file(s)
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.ServerAdmin] INFO - Bootstrap file(s) executed
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.backend] INFO - Executes the bootstrap file(s)
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.backend] INFO - Bootstrap file(s) executed
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02] INFO - "SimpleCRUD-v02" solution started
+2018-01-10 14:41:31 [wakanda] INFO - "SimpleCRUD-v02" solution has been successfully opened for running (duration: 950 ms)
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.backend] INFO - Warming the cache..........done
+2018-01-10 14:41:31 [wakanda.SimpleCRUD-v02.backend] INFO - close the initApp shared worker
+2018-01-10 14:41:31 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2018-01-10 14:41:31 [wakanda.supervisor] INFO - solution opened

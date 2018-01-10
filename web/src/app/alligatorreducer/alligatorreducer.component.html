@@ -1,0 +1,55 @@
+<p>
+  Alligator: Todo with Reducer!
+</p>
+<p></p>
+<div class="container">
+  <div class="col-md-12">
+  	
+		<input placeholder="your todo" [(ngModel)]="todo">
+		
+		<button class="btn btn-primary" [disabled]="!todo" *ngIf="!editing"
+		  (click)="addTodo(todo)">  
+		   <i class="fa fa-plus-square"></i>
+		</button>
+		
+		<button class="btn btn-primary" *ngIf="editing"
+		  (click)="updateTodo(todo)">
+		  <i class="fa fa-thumbs-up"></i>
+		</button>
+		<button class="btn btn-warning"
+		  (click)="cancelEdit()"
+		  *ngIf="editing">
+		   <i class="fa fa-times"></i>
+		</button>
+
+
+    <h2>Todo List</h2>
+      <table class="table table-sm table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th class="text-center">To do</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let todo of todos$ | async; let i = index;">
+        <td [class.done]="todo.done">{{ todo.value }}</td>
+        <td>
+          <button class="btn btn-secondary"
+                        (click)="editTodo(todo, i)">
+                       <i class="fa fa-edit"></i>
+          </button>
+          <button class="btn btn-success"
+                       (click)="toggleDone(todo, i)">
+                       <i class="fa fa-check-square"></i>
+          </button>
+          <button class="btn btn-danger"
+                       (click)="deleteTodo(i)">
+                       <i class="fa fa-trash-alt"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ </div>
+</div>
+
