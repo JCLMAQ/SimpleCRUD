@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 
-import { Wakanda } from './wakanda.service';
+import { WakandaService } from './wakanda.service';
 
 @Component({
   selector: 'app-root',
-  providers: [Wakanda],
+  providers: [WakandaService],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'app';
 
-  constructor(public wakanda: Wakanda) {
+  constructor(public wakanda: WakandaService) {
     /**
      * To customize the behaviour of the Wakanda service,
      * edit the wakanda.service.ts file content.

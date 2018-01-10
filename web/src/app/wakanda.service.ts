@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import {WakandaClient} from 'wakanda-client/browser/no-promise';
 
 @Injectable()
-export class Wakanda {
+export class WakandaService {
 
   private client: WakandaClient;
   private catalog;
+ 
 
   constructor() {
     /**

@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from './shared/material.module';
 import { RoutingModule } from './app-routing.module';
 
+import {WakandaService} from './wakanda.service';
+
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import {StoreModule} from '@ngrx/store';
@@ -51,7 +53,7 @@ import { todoReducer } from './alligatorreducer/reducers/todo.reducer';
    
     StoreModule.forRoot({ todoReducer }),
   ],
-  providers: [SpeakersService, ItemsService, ProductService],
+  providers: [SpeakersService, ItemsService, ProductService, WakandaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

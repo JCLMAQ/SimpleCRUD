@@ -1,1 +1,139 @@
-import { Injectable } from '@angular/core';import { Product } from './product.model';import { PRODUCT_ITEMS } from './product-data';import { findIndex } from 'lodash';@Injectable()export class ProductService {  private pItems = PRODUCT_ITEMS;  getProductsFromData(): Product[] {    console.log(this.pItems);    return this.pItems  }  addProduct(product: Product) {    this.pItems.push(product);    console.log(this.pItems);  }  updateProduct(product: Product) {    let index = findIndex(this.pItems, (p: Product) => {      return p.id === product.id;    });    this.pItems[index] = product;  }  deleteProduct(product: Product) {    this.pItems.splice(this.pItems.indexOf(product), 1);    console.log(this.pItems);  }}  // getProductsFromService(): Product[] {  //   return [{  //   id: 1,  //   name: 'Scissors',  //   description: 'use this to cut stuff',  //   price: 4.99  // }, {  //   id: 2,  //   name: 'Steak Knives',  //   description: 'use this to eat food with',  //   price: 10.99  // }, {  //   id: 3,  //   name: 'Shot Glass',  //   description: 'use this to take shots',  //   price: 5.99  // }]  // }
+import { Injectable, EventEmitter } from '@angular/core';
+import { Http, Headers } from '@angular/http';
+
+import { Product } from './product.model';
+
+import { findIndex } from 'lodash';
+
+import {WakandaService} from '../wakanda.service';
+
+import { MatDialog } from '@angular/material';
+import { ConfirmComponent } from '../shared/confirm/confirm.component';
+
+
+
+@Injectable()
+export class ProductService {
+	
+	private products: Product[] = [];
+	private pItems;
+	
+	constructor(
+		private wakandaService: WakandaService,
+		private dialog: MatDialog
+	){}
+
+
+
+getProducts() {
+		this.products = [];
+		
+        var that = this;
+		this.wakandaService.getCatalog().then(ds=> {	   	
+			ds['Product']
+			.query()
+			.then(res => {
+				for(let entity of res['entities']) {				
+							 //console.log(entity);
+							 that.products.push({
+			      				ID: entity['ID'],
+			      				name: entity['name'],
+			      				description: entity['description'],
+			      				price: entity['price']
+				      		});						
+		    		}
+		    	});	
+		    }); 
+		    
+		   this.pItems = this.products;
+		   
+     return this.products;   
+    }
+
+getProductByID(ID) {
+   // return this.todos.find(todo => todo.ID === ID );
+   console.log('Product '+ ID + ' selected');
+   return this.products.find(product => product.ID === Number(ID));
+  }
+    
+newProduct(newProductName,newProductDescription,newPrice) {
+        this.wakandaService.getCatalog().then(ds => {
+            let product = ds['Product'].create({
+                name: newProductName,
+                description: newProductDescription,
+                price: newPrice
+            });
+
+            product.save()
+            .then(() => {
+                alert('saved')
+                console.log('Product '+ product['ID'] + ' created');
+                this.products.push({
+                    ID: product['ID'],
+                    name: newProductName,
+                    description: newProductDescription,
+                     price:newPrice
+                });
+                newProductName = ""; //clear the input
+                newProductDescription = "";
+                newPrice = 0;
+                
+            });
+        });
+    }
+    
+    updateProduct(editedProduct){
+    	console.log('Product '+ editedProduct.ID + ' selected'); 
+    	var that=this;
+    //	debugger;
+    	
+	 	this.wakandaService.getCatalog().then(ds=> {	
+			ds ['Product'].find(editedProduct.ID).then(emp=>{
+				emp.name = editedProduct.name;
+				emp.description = editedProduct.description;
+				emp.price = editedProduct.price;
+				
+				emp.save().then(function(){
+					alert('Product ' + editedProduct.ID + ' updated');
+					console.log('Product ID :  '+ editedProduct.ID + ' updated');
+				})
+			});
+	 	});
+	 	this.products
+ 
+    	return this.products;
+    }
+    
+    
+    deleteProduct(product){   
+    	console.log('Product '+ product.ID + ' selected');
+    	//debugger;
+    	var that=this;
+	 	this.wakandaService.getCatalog().then(ds=> {	
+			ds['Product'].find(product.ID).then(emp=> {
+				emp.delete().then(function () {
+					alert('Product ID Deleted: ' + product.ID )
+			    	console.log('Product '+ product.ID + ' deleted');
+				});
+			});
+	 	});
+	 	var indexToFind = this.getProductByID(product.ID);
+	 	this.products.splice(product.ID, 1);
+	 	//this.todos.splice(indexToFind, 1);	 	
+	 	//this.todos.find(todo => todo.ID === Number(ID));
+	 	
+	 	
+	 	return this.products;
+    }
+    
+    addProduct(product: Product) {
+	    // this.pItems.push(product);
+	    // console.log(this.pItems);
+	    this.newProduct(product.name, product.description,product.price);
+	    
+    }
+    
+    
+}
+
+

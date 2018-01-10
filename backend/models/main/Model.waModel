@@ -46,12 +46,23 @@
 						"Y": 52
 					}
 				}
+			},
+			"Product": {
+				"panelColor": "#E5B9B7",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 38,
+						"Y": 256
+					},
+					"pathVisible": true
+				}
 			}
 		},
 		"model": {
 			"scriptMode": "manual",
 			"workspaceLeft": 0,
-			"workspaceTop": 168,
+			"workspaceTop": 200,
 			"relationCurve": {
 				"run": true,
 				"mode": 1
@@ -410,6 +421,7 @@
 					"applyTo": "dataClass",
 					"scope": "public",
 					"from": "$mainModel.User.methods.addUser",
+					"allowedOnHTTPGET": false,
 					"userDefined": true
 				},
 				{
@@ -417,9 +429,43 @@
 					"applyTo": "entity",
 					"scope": "publicOnServer",
 					"from": "$mainModel.User.entityMethods.validatePassword",
+					"allowedOnHTTPGET": false,
 					"userDefined": true
 				}
 			]
+		},
+		{
+			"collectionName": "ProductCollection",
+			"className": "Product",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"type": "long",
+					"autosequence": "true",
+					"unique": "true",
+					"primKey": "true"
+				},
+				{
+					"name": "name",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "description",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "price",
+					"scope": "public",
+					"type": "number",
+					"kind": "storage"
+				}
+			]
 		}
-	]
+	],
+	"type": []
 }
