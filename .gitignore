@@ -44,3 +44,4 @@ node_modules/
 # Wakanda local files
 */.wakanda/hashes.json
 .wakanda-backup/
+*/*.txt
