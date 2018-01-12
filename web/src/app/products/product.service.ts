@@ -17,17 +17,41 @@ export class ProductService {
 	
 	private products: Product[] = [];
 //	private pItems;
+private items;
+private count: number;
 	
 	constructor(
-		private wakandaService: WakandaService,
+		private wakanda: WakandaService,
 		private dialog: MatDialog
 	){}
 
+async getClass() {
+    const ds = await this.wakanda.catalog();
+    return ds.Product;
+  }
 
+  async getProducts(opts: {
+    pageSize: number;
+    start: number;
+    filter?: string;
+    params?: (string)[];
+    orderBy?: string
+  } = {
+    pageSize: 10,
+    start: 0
+  }): Promise<Product[]> {
+    const Product = await this.getClass();
+    const res = await Product.query(opts);
+        this.items = res.entities;
+        this.count =  res._count;
+        
+        return res.entities;
+  }
 
+/*
 getProducts() {
 		this.products = [];
-		
+debugger;		
         var that = this;
 		this.wakandaService.getCatalog().then(ds=> {	   	
 			ds['Product']
@@ -49,6 +73,7 @@ getProducts() {
 		   
      return this.products;   
     }
+*/    
 
 getProductByID(ID) {
  //  console.log('Product '+ ID + ' selected');
@@ -62,38 +87,48 @@ addProduct(product: Product) {
 	    this.newProduct(product.name, product.description,product.price);
     }
     
-	newProduct(newProductName,newProductDescription,newPrice) {
-        this.wakandaService.getCatalog().then(ds => {
-            let product = ds['Product'].create({
-                name: newProductName,
-                description: newProductDescription,
-                price: newPrice
-            });
+async newProduct(newProductName,newProductDescription,newPrice) {
+    const ds = await this.wakanda.catalog();
+    let product = ds['Product'].create({
+            name: newProductName,
+            description: newProductDescription,
+            price: newPrice
+        });
+        return  await product.save();
+         
+  /*  .then(async ds => {
+        let product = ds['Product'].create({
+            name: newProductName,
+            description: newProductDescription,
+            price: newPrice
+        });
 
-            product.save()
-            .then(() => {
+        await product.save();
+        .then(() => {
 //                alert('saved')
 //                console.log('Product '+ product['ID'] + ' created');
-                this.products.push({
-                    ID: product['ID'],
-                    name: newProductName,
-                    description: newProductDescription,
-                     price:newPrice
-                });
-                newProductName = ""; //clear the input
-                newProductDescription = "";
-                newPrice = 0;
-                
+            this.products.push({
+                ID: product['ID'],
+                name: newProductName,
+                description: newProductDescription,
+                 price:newPrice
             });
+            newProductName = ""; //clear the input
+            newProductDescription = "";
+            newPrice = 0;
+            
         });
-    }
+    });
+    */
+    
+}
     
     updateProduct(editedProduct){
  //   	console.log('Product '+ editedProduct.ID + ' selected'); 
     	var that=this;
     //	debugger;
     	
-	 	this.wakandaService.getCatalog().then(ds=> {	
+	 	this.wakanda.catalog().then(ds=> {	
 			ds ['Product'].find(editedProduct.ID).then(emp=>{
 				emp.name = editedProduct.name;
 				emp.description = editedProduct.description;
@@ -112,7 +147,7 @@ addProduct(product: Product) {
  //  	console.log('Product '+ product.ID + ' selected');
     	//debugger;
     	var that=this;
-	 	this.wakandaService.getCatalog().then(ds=> {	
+	 	this.wakanda.catalog().then(ds=> {	
 			ds['Product'].find(product.ID).then(emp=> {
 				emp.delete().then(function () {
 //					alert('Product ID Deleted: ' + product.ID )
@@ -125,6 +160,7 @@ addProduct(product: Product) {
 	 	
 	 	return this.products;
     }
+
 }
 
 

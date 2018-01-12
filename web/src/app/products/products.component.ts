@@ -14,6 +14,7 @@ import {WakandaService} from '../wakanda.service';
 
 
 export class ProductsComponent implements OnInit {
+  
   private products: Product[] = [];
   
   productForm: boolean = false;
@@ -24,14 +25,14 @@ export class ProductsComponent implements OnInit {
 
   constructor(
   	private productService: ProductService, 
-  	public wakandaService: WakandaService) { }
+  	public wakanda: WakandaService) { }
 
   ngOnInit() {
 //	this.products = this.productService.getProducts();
 	this.refreshTheList();
   //	debugger;
   }
-  
+ 
   showEditProductForm(product: Product) {
     if(!product) {
       this.productForm = false;
@@ -51,10 +52,11 @@ export class ProductsComponent implements OnInit {
     this.isNewForm = true;
   }
 
-  saveProduct(product: Product) {
-    if(this.isNewForm) {
+  async saveProduct(product: Product) {
+   debugger;
+   if(this.isNewForm) {
       // add a new product
-      this.productService.addProduct(product);
+     await this.productService.addProduct(product);
     }
     this.productForm = false;
      this.refreshTheList();
@@ -82,9 +84,9 @@ export class ProductsComponent implements OnInit {
     this.editProductForm = false;
   }
   
-  refreshTheList(){
-  	this.products=[];
-  	this.products = this.productService.getProducts();
+ async refreshTheList(){
+ //	this.products=[];
+  	this.products = await this.productService.getProducts();
   }
 }
 
