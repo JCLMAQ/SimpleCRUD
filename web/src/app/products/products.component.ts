@@ -7,7 +7,7 @@ import {WakandaService} from '../wakanda.service';
 
 @Component({
   selector: 'app-products',
-  providers:[WakandaService, ProductService],
+  providers: [WakandaService, ProductService],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
@@ -17,8 +17,8 @@ export class ProductsComponent implements OnInit {
 
   private products: Product[] = [];
 
-  productForm: boolean = false;
-  editProductForm: boolean = false;
+  productForm = false;
+  editProductForm = false;
   isNewForm: boolean;
   newProduct: any = {};
   editedProduct: any = {};
@@ -32,7 +32,7 @@ export class ProductsComponent implements OnInit {
   }
 
   showEditProductForm(product: Product) {
-    if(!product) {
+    if (!product) {
       this.productForm = false;
       return;
     }
