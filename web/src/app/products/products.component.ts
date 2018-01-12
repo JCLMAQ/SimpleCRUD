@@ -14,9 +14,9 @@ import {WakandaService} from '../wakanda.service';
 
 
 export class ProductsComponent implements OnInit {
-  
+
   private products: Product[] = [];
-  
+
   productForm: boolean = false;
   editProductForm: boolean = false;
   isNewForm: boolean;
@@ -24,15 +24,13 @@ export class ProductsComponent implements OnInit {
   editedProduct: any = {};
 
   constructor(
-  	private productService: ProductService, 
-  	public wakanda: WakandaService) { }
+    private productService: ProductService,
+    public wakanda: WakandaService) { }
 
   ngOnInit() {
-//	this.products = this.productService.getProducts();
-	this.refreshTheList();
-  //	debugger;
+    this.refreshTheList();
   }
- 
+
   showEditProductForm(product: Product) {
     if(!product) {
       this.productForm = false;
@@ -45,29 +43,29 @@ export class ProductsComponent implements OnInit {
 
   showAddProductForm() {
     // resets form if edited product
-    if(this.products.length) {
+    if (this.products.length) {
       this.newProduct = {};
-    }
-    this.productForm = true;
-    this.isNewForm = true;
+      }
+      this.productForm = true;
+      this.isNewForm = true;
   }
 
   async saveProduct(product: Product) {
-   debugger;
-   if(this.isNewForm) {
+// debugger;
+   if (this.isNewForm) {
       // add a new product
      await this.productService.addProduct(product);
     }
     this.productForm = false;
-     this.refreshTheList();
-  }
-
-  removeProduct(product: Product) {
-    this.productService.deleteProduct(product);
     this.refreshTheList();
   }
 
-  updateProduct(product:Product) {
+  async removeProduct(product: Product) {
+    await  this.productService.deleteProduct(product);
+    this.refreshTheList();
+  }
+
+  updateProduct(product: Product) {
     this.productService.updateProduct(product);
     this.editProductForm = false;
     this.editedProduct = {};
@@ -83,10 +81,10 @@ export class ProductsComponent implements OnInit {
     this.editedProduct = {};
     this.editProductForm = false;
   }
-  
- async refreshTheList(){
- //	this.products=[];
-  	this.products = await this.productService.getProducts();
+
+ async refreshTheList() {
+  // this.products=[];
+    this.products = await this.productService.getProducts();
   }
 }
 
