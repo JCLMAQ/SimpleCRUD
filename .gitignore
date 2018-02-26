@@ -45,3 +45,11 @@ node_modules/
 */.wakanda/hashes.json
 .wakanda-backup/
 */*.txt
+
+web/src/app/shared/confirm/confirm\.component\.ts
+
+web/src/app/shared/confirm/confirm\.component\.spec\.ts
+
+web/src/app/shared/confirm/confirm\.component\.html
+
+web/src/app/shared/confirm/confirm\.component\.css
