@@ -48,7 +48,6 @@ import { todoReducer } from './alligatorreducer/reducers/todo.reducer';
     MaterialModule,
     RoutingModule,
     NgbModule.forRoot(),
-   
     StoreModule.forRoot({ todoReducer }),
   ],
   providers: [SpeakersService, ItemsService, ProductService],
