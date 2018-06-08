@@ -6,11 +6,9 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from './shared/material.module';
 import { RoutingModule } from './app-routing.module';
 
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import {StoreModule} from '@ngrx/store';
-import {StoreDevtoolsModule} from '@ngrx/store-devtools';
-import {StoreLogMonitorModule, useLogMonitor} from '@ngrx/store-log-monitor';
+
 
 import { AppComponent } from './app.component';
 
@@ -47,7 +45,6 @@ import { todoReducer } from './alligatorreducer/reducers/todo.reducer';
     HttpModule,
     MaterialModule,
     RoutingModule,
-    NgbModule.forRoot(),
     StoreModule.forRoot({ todoReducer }),
   ],
   providers: [SpeakersService, ItemsService, ProductService],
