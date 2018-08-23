@@ -195,3 +195,52 @@
 2018-01-12 18:04:16 [wakanda.SimpleCRUD-Main] INFO - "SimpleCRUD-Main" solution started
 2018-01-12 18:04:16 [wakanda] INFO - "SimpleCRUD-Main" solution has been successfully opened for running (duration: 2652 ms)
 2018-01-12 18:04:16 [wakanda.supervisor] INFO - solution opened
+2018-08-23 22:15:27 [wakanda.SimpleCRUD-Main] INFO - Users and groups directory opened
+2018-08-23 22:15:28 [IndexManager] INFO - Index  on Company.ID built in 0 ms
+2018-08-23 22:15:28 [IndexManager] INFO - Index  on Company.country built in 0 ms
+2018-08-23 22:15:28 [IndexManager] INFO - Index  on Company.manager built in 0 ms
+2018-08-23 22:15:28 [IndexManager] INFO - Index  on Country.ID built in 0 ms
+2018-08-23 22:15:28 [IndexManager] INFO - Index  on Employee.ID built in 0 ms
+2018-08-23 22:15:28 [IndexManager] INFO - Index  on Employee.company built in 0 ms
+2018-08-23 22:15:28 [IndexManager] INFO - Index  on Employee.manager built in 0 ms
+2018-08-23 22:15:28 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2018-08-23 22:15:28 [wakanda.SimpleCRUD-Main.backend] INFO - Datastore opened
+2018-08-23 22:15:28 [wakanda.SimpleCRUD-Main.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2018-08-23 22:15:28 [wakanda.SimpleCRUD-Main.backend] INFO - "backend" project opened
+2018-08-23 22:15:28 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2018-08-23 22:15:28 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - "ServerAdmin" project opened
+2018-08-23 22:15:28 [wakanda.SimpleCRUD-Main] INFO - "SimpleCRUD-Main" solution opened
+2018-08-23 22:15:28 [wakanda] INFO - Starts "SimpleCRUD-Main" solution
+2018-08-23 22:15:29 [wakanda.SimpleCRUD-Main.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2018-08-23 22:15:29 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - HTTP Server started
+2018-08-23 22:15:29 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - "ServerAdmin" project started
+2018-08-23 22:15:29 [wakanda.SimpleCRUD-Main.backend] INFO - HTTP Server started
+2018-08-23 22:15:29 [wakanda.SimpleCRUD-Main.backend] INFO - "backend" project started
+2018-08-23 22:15:29 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - Executes the bootstrap file(s)
+2018-08-23 22:15:29 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - Bootstrap file(s) executed
+2018-08-23 22:15:29 [wakanda.SimpleCRUD-Main.backend] INFO - Executes the bootstrap file(s)
+2018-08-23 22:15:30 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2018-08-23 22:15:30 [wakanda.SimpleCRUD-Main.backend] INFO -  ::::: Creating  2000  Employees  Companies...
+2018-08-23 22:15:30 [wakanda.SimpleCRUD-Main.backend] INFO - Bootstrap file(s) executed
+2018-08-23 22:15:30 [wakanda.SimpleCRUD-Main] INFO - "SimpleCRUD-Main" solution started
+2018-08-23 22:15:30 [wakanda] INFO - "SimpleCRUD-Main" solution has been successfully opened for running (duration: 2279 ms)
+2018-08-23 22:15:30 [wakanda.supervisor] INFO - solution opened
+2018-08-23 22:15:30 [IndexManager] INFO - Index  on Employee.ID built in 0 ms
+2018-08-23 22:15:30 [IndexManager] INFO - Index  on Employee.company built in 0 ms
+2018-08-23 22:15:30 [IndexManager] INFO - Index  on Employee.manager built in 1 ms
+2018-08-23 22:15:30 [IndexManager] INFO - Index  on Company.ID built in 0 ms
+2018-08-23 22:15:30 [IndexManager] INFO - Index  on Company.country built in 0 ms
+2018-08-23 22:15:30 [IndexManager] INFO - Index  on Company.manager built in 0 ms
+2018-08-23 22:15:30 [IndexManager] INFO - Index  on Country.ID built in 0 ms
+2018-08-23 22:15:35 [wakanda.SimpleCRUD-Main.backend] INFO -  End creating Employees. Employees:  2001 , Companies:  101 , Country:  11  ::::: 
+2018-08-23 22:15:35 [wakanda.SimpleCRUD-Main.backend] INFO - Warming the cache..........
+2018-08-23 22:15:35 [wakanda.SimpleCRUD-Main.backend] INFO - Warming the cache..........done
+2018-08-23 22:15:35 [wakanda.SimpleCRUD-Main.backend] INFO - close the initApp shared worker
+2018-08-23 22:22:29 [wakanda] INFO - Stops "SimpleCRUD-Main" solution
+2018-08-23 22:22:31 [wakanda.SimpleCRUD-Main.backend] INFO - "backend" project stopped
+2018-08-23 22:22:32 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - "ServerAdmin" project stopped
+2018-08-23 22:22:32 [wakanda.SimpleCRUD-Main] INFO - "SimpleCRUD-Main" solution stopped
+2018-08-23 22:22:32 [wakanda] INFO - Closes "SimpleCRUD-Main" solution
+2018-08-23 22:22:33 [wakanda.SimpleCRUD-Main.backend] INFO - "backend" project closed
+2018-08-23 22:22:33 [wakanda.SimpleCRUD-Main.ServerAdmin] INFO - "ServerAdmin" project closed
+2018-08-23 22:22:33 [wakanda.SimpleCRUD-Main] INFO - "SimpleCRUD-Main" solution closed
