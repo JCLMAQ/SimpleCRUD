@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { HttpModule } from '@angular/http';
+
 import { MaterialModule } from './shared/material.module';
 import { RoutingModule } from './app-routing.module';
 
@@ -29,11 +29,18 @@ import { ProductService } from './products/product.service';
 
 import { AlligatorreducerComponent } from './alligatorreducer/alligatorreducer.component';
 import { todoReducer } from './alligatorreducer/reducers/todo.reducer';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    HomeComponent, SpeakersComponent, SpeakersListComponent, SpeakersDetailComponent, ItemsComponent, ItemsListComponent, ItemDetailComponent, 
+    AppComponent,
+    HomeComponent,
+    SpeakersComponent,
+    SpeakersListComponent,
+    SpeakersDetailComponent,
+    ItemsComponent,
+    ItemsListComponent,
+    ItemDetailComponent,
     ProductsComponent,
     AlligatorreducerComponent
   ],
@@ -42,7 +49,7 @@ import { todoReducer } from './alligatorreducer/reducers/todo.reducer';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule,
+    HttpClientModule,
     MaterialModule,
     RoutingModule,
     StoreModule.forRoot({ todoReducer }),
